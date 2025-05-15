@@ -2,9 +2,24 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon Image</title>
+  <title>Image plein écran</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  </style>
 </head>
-<body style="margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: white;">
-  <img src="mon-image.png" alt="Mon image" style="max-width: 100%; max-height: 100%;">
+<body>
+  <img src="mon-image.png" alt="Image">
 </body>
 </html>
